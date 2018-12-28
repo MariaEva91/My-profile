@@ -1,0 +1,174 @@
+.body {
+  margin: 0%;
+}
+
+.nav {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-container {
+  margin-left: 17%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 60px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.main-container .profile {
+  text-align: left;
+  width: 900px;
+  height: auto;
+  border: outset;
+  display: flex;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.main-container .profile .ph-profile {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+.main-container .profile img {
+  padding-top: 5px;
+  width: 250px;
+  height: 280px;
+  margin-left: 15px;
+}
+.main-container .profile h1 {
+  color: hotpink;
+  font-size: 40px;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact {
+  width: 600px;
+  height: 40px;
+  background-color: hotpink;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact .fa-github {
+  font-size: 30px;
+  color: white;
+}
+.contact .fa-github:hover {
+  color: #ff99cc;
+}
+.contact .fa-linkedin-in {
+  font-size: 30px;
+  color: white;
+}
+.contact .fa-linkedin-in:hover {
+  color: #3333ff;
+}
+.contact .fa-twitter {
+  font-size: 30px;
+  color: white;
+}
+.contact .fa-twitter:hover {
+  color: #0000ff;
+}
+.contact .fa-envelope {
+  font-size: 30px;
+  color: white;
+}
+.contact .fa-envelope:hover {
+  color: #1a1aff;
+}
+
+.skills {
+  text-align: center;
+  border: outset;
+  width: 900px;
+  padding-bottom: 40px;
+}
+
+progress[value] {
+  /* Eliminamos la apariencia por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Quitamos el borde que aparece en Firefox */
+  border: none;
+  /* Aplicamos las dimensiones */
+  width: 250px;
+  height: 20px;
+  /* Aplicamos color a la barra */
+  color: hotpink;
+}
+
+/* Compatibilidad de color en Firefox y Chrome */
+progress::-moz-progress-bar {
+  background: #0063a6;
+}
+
+progress::-webkit-progress-value {
+  background: hotpink;
+}
+
+.projects {
+  text-align: center;
+  border: outset;
+  width: 900px;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.titles {
+  text-align: center;
+  font-size: 25px;
+  color: hotpink;
+}
+
+/*# sourceMappingURL=style.css.map */
